@@ -1,0 +1,72 @@
+/* NAVIGATION BAR */
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #262626;
+}
+
+.web h1{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+}
+
+span{
+    color: #e03e3e;
+}
+
+ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2vw;
+}
+
+a:hover{
+    color: tomato;
+    transition: 0.5s;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+/*NAVIGATION BAR*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 450px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.box-img{
+    border-radius: 50%;
+}

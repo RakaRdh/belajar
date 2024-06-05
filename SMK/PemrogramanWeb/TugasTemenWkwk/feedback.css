@@ -1,0 +1,98 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    background: #00b4d8;
+}
+
+.label{
+    font-size: 20px;
+    color: #0077b6;
+}
+
+.feedback-box{
+    margin-top: 30px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+form{
+    margin: 35px;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea-field{
+    padding-top: 10px;
+    height: 150px;
+}
+
+.btn{
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #00b4d8;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #0077b6;
+}
+
+header a h1{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2vw;
+}
+
+a:hover{
+    color: #caf0f8;
+    transition: 0.25s;
+}
+
+header a h1:hover{
+    color: #caf0f8;
+    transition: 0.25s;
+}

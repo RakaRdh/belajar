@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="belajarcss.css">
+</head>
+
+<!-- ini internal style  -->
+<style>
+    p{
+        color:bisque;
+        font-size: 30pt;
+        font-style: italic;
+    }
+</style>
+
+<body style="background-color: brown;">
+    <!-- CSS ( Cascading Style Sheet )
+    1. CSS merupakan koleksi style yang dapat digunakan untuk mengubah tampilan elemen-elemen HTML di halaman website 
+    2. Mengatur tampilan dan layout sesuai dengan aturan standar yang berlaku
+    3. Dapat membuat tampilan yang konsisten karena sudah disediakan rules oleh CSS itu sendiri 
+
+    CSS mengizinkan kita untuk lebih dari 1 aturan / rules (hanya ada 1 color, font)
+    CSS memiliki beberapa part (Each CSS rule consists of the following parts : )
+    - selector (nama stylenya)
+    - declaration block (di dalem {})
+    contoh
+    selector{
+        //Declaration Block
+        property:value;
+    }
+
+    ada 3 jenis css style :
+    - inline style
+        =>
+        dicantumkan di dalam baris code itu sendiri
+        contoh :
+        <p style="color:white;">Halo, color:white; adalah contoh dari inline style</p>
+
+    - internal style sheet
+        => 
+        dia harus ada di file HTML yang sama
+
+    - external style sheet
+        =>
+        dia ada di luar file HTML (beda file), biasanya disambungkan menggunakan tag link
+
+    note :
+    internal ama eksternal konsepnya sama, cuman kalo internal dia ada di dalem htmlnya (biasanya di antara tag head dan tag body).
+    dan kalo eksternal, dia harus buat file dengan ekstensi .css dan harus connect menggunakan tag <link> dan hrefnya pastiin merupakan
+    nama file .css yang dibuat
+
+    prioritasnya adalah inline -> internal -> external
+
+    ada yang namanya user defined style ID dan class... 
+    ID hanya bisa dipake oleh 1 element, kalau class dia bisa dipake rame-rame oleh banyak elemen 
+    -->
+
+    <!-- contoh inline style gini cik -->
+    <p style="font-size: 24pt; color:white;">ini dia make inline</p>
+
+    <p>ini make internal style sheet</p>
+
+    <!-- namanya juga eksternal, berarti file cssnya ada diluar -->
+    <h1>lalalalala</h1>
+
+    <h1 class="hahay">dpijowuihayugd</h1>
+    <h1 class="cihuy">dpijowuihayugd</h1>
+    
+</body>
+</html>

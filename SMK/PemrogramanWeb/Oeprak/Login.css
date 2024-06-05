@@ -1,0 +1,58 @@
+body {
+    margin: 0 ;
+    padding: 0;
+}
+.body {
+    height: auto;
+    margin: 15% 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body table{
+    margin-left: 30%;
+    font-size: 25px;
+}
+#input{
+    padding-bottom: 15px;
+}
+::placeholder{
+    font-style: italic;
+    font-size: 18px;
+}
+input[type=text]{
+    width: 250%;
+    height: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: solid 3px #272118;
+}
+input[type=password]{
+    width: 250%;
+    height: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: solid 3px #272118;
+}
+textarea{
+    width: 300%;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: solid 3px #272118;
+}
+button{
+    width: 120px;
+    height: 35px;
+    background-color: #272118;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    outline: none;
+    border-radius: 30px;
+}

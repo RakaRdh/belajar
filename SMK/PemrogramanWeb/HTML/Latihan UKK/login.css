@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-box{
+    top: 30%;
+    left: 43%;
+    position: absolute;
+}
+
+.login-box input{
+    font-style: italic;
+}
+
+.text-box{
+    width: 100%;
+    padding: 2px 0;
+    margin: 2px 0;
+}
+
+
+.text-box input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.btn{
+    padding: 2px 0;
+    margin: 2px 0;
+    width: 30%;
+    color: white;
+    border-radius: 10px;
+    background: rgb(255, 56, 21);
+}
+
+.btn input{
+    border-radius: 20px;
+}

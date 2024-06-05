@@ -1,0 +1,38 @@
+<html>
+    <head><title>Pendaftaran SMK Isekai</title></head>
+    <body>
+        <h3 align=center>FORMULIR PENDAFTARAN SMK ISEKAI</h3>
+        <hr width=100% size=5 color=black>
+
+        <form action=# method=get>
+            Nama Siswa  : <input type=text name=nama><p>
+            Alamat      : <input type=text name=alamat><p>
+
+            TTL         : <input type=text name=ttl><p>
+            <font color=red>Note ( Format pengisian TTL = Tempat,Tanggal lahir. Contoh : Jakarta, 15 Februari 2004)</font><p>
+            
+            NISN        : <input type=text name=nisn><p>
+            Asal Sekolah    : <input type=text name=asal_sekolah><p>
+            
+            Email   : <input type=text name=email><p>
+
+            <p><b>Jenis Kelamin :</b><p>
+                <input type=radio name=kelamin value=Laki-laki>Laki-laki<p>
+                <input type=radio name=kelamin value=Perempuan>Perempuan<p>
+            </p>
+
+            <p><b>Pilihan jalur Pendaftaran :</b>
+            <select name=jalur>
+                <option value=Prestasi>Prestasi</option>
+                <option value=Mandiri>Mandiri</option>
+                <option value="Luar Domisili">Luar Domisili</option>
+                <option value=Umum>Umum</option>
+            </select>
+
+            <p>
+                <input type=submit value="Kirim Data" name=submit>
+                <input type=reset value="Ulangi" name=reset>
+            </p>
+        </form>
+    </body>
+</html>

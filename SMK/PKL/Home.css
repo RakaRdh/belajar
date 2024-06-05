@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.Head{
+    position: sticky;
+    top: 0%;
+}
+
+.Head nav{
+    background: #323232;
+    height: 80px;
+    width: 100%;
+}
+
+.Head nav img{
+    width: 80px;
+    float: left;
+    margin-right: 438px;
+    margin-left: 15px;
+}
+
+.Head label.logo{
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 26px 40px;
+    font-weight: bold;
+    background-color: #B40000;
+}
+
+.Head nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.Head nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.Head nav ul li .dropdown{
+    display: none;
+}
+
+.Head nav ul li:hover .dropdown{
+    display: block;
+    background: #323232;
+    position: absolute;
+    padding: 10px;
+}
+
+.Head nav ul li:hover .dropdown li{
+    display: block;
+}
+
+.Head nav ul li a{
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.Head a .active, a:hover{
+    background: #B40000;
+    transition: .6s;
+}
+
+section{
+    width: 100%;
+    height: 70vh;
+}
+
+section.s1{
+    background: url(img/telkom-landmark-tower_050820.jpg);
+    background-size: cover;
+}
+
+section.s2{
+    padding: 75px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+section.s3{
+    padding: 75px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #464646;
+}
+
+section.s2 h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 52px;
+    color: rgb(224, 62, 62);
+}
+
+section.s2 .judul p{
+    padding-bottom: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #000000;
+}
+
+section.s2 .isi p{
+    padding-top: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: medium;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #000000;
+}
+
+section.s3 .judul p{
+    padding-bottom: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+
+    color: white;
+}
+
+section.s3 .isi{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+
+    color: white;
+}
+
+section.s3 .isi #container {
+    padding-top: 20px;
+}
+
+section.s3 .isi #container #column1 p{
+    padding-top: 20px;
+    text-align: left;
+}
+
+section.s3 .isi #container #column2{
+    padding-top: 40px;
+}
+section.s3 .isi #container #column2 p{
+    padding-top: 20px;
+    text-align: left;
+}
