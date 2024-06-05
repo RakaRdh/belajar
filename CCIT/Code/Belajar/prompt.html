@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <!-- prompt adalah fungsi untuk memasukkan sebuah input didalam jendela windows -->
+        <!-- 
+            () mengindikasikan metode, di dalam method ada parameter
+            [] mengindikasikan array, di dalam array ada index
+            {} mengindikasikan body program, di dalam block program ada statements
+         -->
+        <script type="text/javascript">
+            /*
+            Deklarasi => menjelaskan (var nama)
+            Inisialisasi => menandai (nama = prompt)
+
+            ada 2 tipe input data,
+            Direct => secara langsung (var nama = "Asep Stroberi")
+            Indirect => menunggu inputan user
+            */ 
+            var nama = prompt("Masukkan Nama Anda"); /* ini indirect karena nunggu input user*/
+            var usia = prompt("Masukkan Usia Anda");
+
+            var statusUsia;
+            if(statusUsia >= 18){
+                statusUsia = "Major";
+            } else if(statusUsia < 18){
+                statusUsia = "Minor";
+            } else {
+                statusUsia = "Bukan Angka";
+            }
+
+            fungsiSaya();
+
+            /*
+            Kalau gaada deklarasi function fungsiSaya() (dalam artian dikosongin), maka program hanya menyimpan input yang dimasukkan oleh user
+            */ 
+
+            function fungsiSaya(){
+                if(nama =="" & usia == ""){
+                    alert("MASUKIN WOOOIIII, 2 2nya kosong neh.. maksud banget");
+                }else if(nama == ""){
+                    alert("Ngerti Masukin Nama Ga ?!");
+                }else if(usia == ""){
+                    alert("Usia Anda Mana ?!");
+                }else{
+                    alert("Nama Anda" + nama +", Usia Anda" + usia + ", Anda " + statusUsia)
+                }
+            }
+        </script>
+    </body>
+</html>
