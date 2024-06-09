@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            // Contoh isNan(),
+            //  mengecek bahwa variable bukan merupakan integer
+            num1 = "Two thousand";
+            num2 = 8000;
+            Result = isNaN(num1);
+            alert(Result);
+            Res = isNaN(num2);
+            alert(Res);
+
+            // ParseInt()
+            // Mengubah nilai menjadi integer
+            x = "5";
+            resAwal = isNaN(x);
+            alert(resAwal);
+            y = parseInt(x);
+            resAkhir = isNaN(y);
+            alert(resAkhir);
+
+            // ParseFloat()
+            // mengubah nilai menjadi float
+            x = "6.2";
+            rAw = isNaN(x);
+            alert(resAwal);
+            y = parseFloat(x);
+            rAk = isNaN(y);
+            alert(resAkhir);
+
+            // Eval()
+            // mengevaluasi
+            // cara 1
+            var res1 = 0;
+            res1 = eval(5 + 10);
+            alert(res1);
+            // cara 2
+            eval("num1=5;num2=10;res1=num1+num2;alert(res1)")
+
+            // Prompt()
+            // menampilkan jendela untuk menampilkan atau mengambil data dari user
+            var a,b,c;
+            a = parseInt(prompt("Masukkan Angka Pertama:"));
+            b = parseInt(prompt("Masukkan Angka Kedua:"));
+            c = a+b;
+            document.write(c); 
+
+            // Confirm()
+            var response;
+            response=confirm("Mau lanjut jadi wibu?");
+            if(response==true){
+                alert("p");
+            }else{
+                alert("AAAAAAAAAAAA");
+            }
+        </script>
+    </body>
+</html>
