@@ -15,7 +15,7 @@
 </head>
 <body bgcolor="#FFEBCD">
     <center>
-        <form action="registrasi.html">
+        <form method="post">
             <table>
                 <tr class="autostyle">
                     <td colspan="4">Pemesanan Buku Online</td>
@@ -37,7 +37,7 @@
                 <tr>
                     <td>Tanggal Lahir:</td>
                     <td>
-                        <input type="date" name="dob" required>
+                        <input type="date" name="dob" id="date" required>
                     </td>
                 </tr>
 
@@ -56,19 +56,19 @@
                 <tr>
                     <td>Pilih Buku:</td>
                     <td>
-                        Fiksi<input type="radio" name="rd1">
-                        Non-Fiksi<input type="radio" name="rd1">
+                        Fiksi<input type="radio" name="rd1" value="Fiksi">
+                        Non-Fiksi<input type="radio" name="rd1" value="Non-Fiksi">
                     </td>
                 </tr>
                 <tr>
                     <td>Pilih Penulis:</td>
                     <td>
-                        <select>
-                            <option value="opt1">Pilih Penulis</option>
-                            <option value="opt2">Hilmi The Pick Me</option>
-                            <option value="opt3">Lana Del Rey</option>
-                            <option value="opt4">Wibu Venu</option>
-                            <option value="opt5">Wota Vaiku</option>
+                        <select id="optPen">
+                            <option value="-">Pilih Penulis</option>
+                            <option value="Hilmi The Pick Me">Hilmi The Pick Me</option>
+                            <option value="Lana Del Rey">Lana Del Rey</option>
+                            <option value="Wibu Venu">Wibu Venu</option>
+                            <option value="Wota Vaiku">Wota Vaiku</option>
                         </select>
                     </td>
                 </tr>
@@ -77,17 +77,17 @@
                     <td>
                         <fieldset>
                             Kategori:
-                            <select>
-                                <option value="opt1">Pilih Kategori</option>
-                                <option value="opt2">Fiksi</option>
-                                <option value="opt3">Non-Fiksi</option>
+                            <select id="optKat">
+                                <option value="-">Pilih Kategori</option>
+                                <option value="Fiksi">Fiksi</option>
+                                <option value="Non-Fiksi">Non-Fiksi</option>
                             </select>
                             Genre:
-                            <select>
-                                <option value="opt4">Pilih Genre</option>
-                                <option value="opt5">Comedy</option>
-                                <option value="opt6">Romance</option>
-                                <option value="opt7">Mistery</option>
+                            <select id="optGenre">
+                                <option value="-">Pilih Genre</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Mistery">Mistery</option>
                             </select>
                         </fieldset>
                     </td>
@@ -98,9 +98,9 @@
                     </td>
                     <td>
                         <label for="pickup">Pick Up</label>
-                        <input type="radio" name="pickup" id="pickup">
+                        <input type="radio" name="pickup" id="pickup" value="Pickup">
                         <label for="pickup">Home Delivery</label>
-                        <input type="radio" name="pickup" id="home">
+                        <input type="radio" name="pickup" id="home" value="Home Delivery">
                     </td>
                 </tr>
                 <tr>
@@ -128,10 +128,44 @@
                 </tr>
                 <tr class="autostyle">
                     <td colspan="4">
-                        <button id="button" type="submit">Submit</button>
+                        <button onclick="inputData()">Submit</button>
                         <button type="reset">Reset</button>
                     </td>
                 </tr>
+
+                <script type="text/javascript">
+                    function inputData(){
+                        var nama = document.getElementsByName("uName")[0].value;
+                        var dob = document.getElementById("date").value;
+                        var email = document.getElementsByName("email")[0].value;
+                        var nohp = document.getElementsByName("nohp")[0].value;
+                        var pilihbuku = document.querySelector('input[name="rd1"]:checked').value;;
+                        var penulis = document.getElementById("optPen").value;
+                        var kategori = document.getElementById("optKat").value;
+                        var genre = document.getElementById("optGenre").value;
+                        var pickup = document.querySelector('input[name="pickup"]:checked').value;;
+                        var catatan = document.getElementsByTagName("textarea")[0].value;
+                        var kota = document.getElementById("city").value;
+
+                        var date = new Date(dob);
+                        var day = date.getDay();
+                        var month = date.getMonth();
+                        var year = date.getFullYear();
+                        
+                        document.write("Nama: " + nama + "<br>" + 
+                               "Tanggal Lahir: " + day + "-" + month + "-" + year + "<br>" + 
+                               "Email: " + email + "<br>" + 
+                               "Phone Number: " + nohp + "<br>" + 
+                               "Buku Pilihan: " + pilihbuku + "<br>" + 
+                               "Penulis: " + penulis + "<br>" + 
+                               "Kategori: " + kategori + "<br>" + 
+                               "Genre: " + genre + "<br>" + 
+                               "Pickup: " + pickup + "<br>" + 
+                               "Catatan: " + catatan + "<br>" + 
+                               "Kota: " + kota);
+            
+                    }
+                </script>
             </table>
         </form>
     </center>

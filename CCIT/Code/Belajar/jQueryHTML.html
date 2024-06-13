@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#a").hide();
+                $("#b").click(function () {
+                    $("#para").prepend(" <B>jQuery </B> ");
+                    $("#para").append(" <B>append() function.</B> ");
+                    $("#para").after(" <H3><span id='c' > This is the newly inserted heading. </span></H3> ");
+                    $("#newhead").hide();
+                    $("#b").hide();
+                    $("#a").show();
+                });
+            });
+            $(document).ready(function () {
+                $("#a").click(function () {
+                    $("#para b").remove();
+                    $("#c").remove();
+                    $("#newhead").show();
+                    $("#b").show();
+                    $("#a").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="center"></div>
+        <h3>Complete the sentence:</h3>
+        <p id="para">is a javascript library that enables the
+            content to be appended after the inner content in the
+            selected element using the</p>
+        <h2 id="newhead">This head would be removed.</h2>
+        <input type="button" id="b" value="Click here">
+        <input type="button" id="a" value="Reset">
+    </body>
+</html>

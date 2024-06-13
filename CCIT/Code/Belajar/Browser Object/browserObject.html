@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function open_win(){
+                // Code dibawah akan memunculkan halaman website di tab berbeda
+                // window.open("Tugas1.html");
+                // Code dibawah akan memunculkan halaman website di window berbeda
+                window.open("Tugas1.html", "Halaman Badminton", "height=100, width=200", false);
+                // parameter true false bertujuan untuk
+                
+            }
+
+            function document_write(){
+                var name = prompt("Please enter your name","");
+                document.write("<P><I><B>Welcome "+name+" Wibu!</B></I></P>")
+            }
+
+            function document_getElementsByName(){
+                var x = document.getElementsByName("uName")[0].value;
+                alert("Nama Anda: Wibu "+x);
+            }
+
+            function document_getElementsByTagName(){
+                var x = document.getElementsByTagName("input")[0].value;
+                alert("Nama Anda: Wibu "+x);
+            }
+
+            function document_getElementById(){
+                var x = document.getElementById("wibu").value;
+                alert("Nama Anda: Wibu "+x);
+            }
+            function document_getElementById(){
+                var x = document.getElementById("wibu").value;
+                alert("Nama Anda: Wibu "+x);
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="open_win()">Button window.open();</button><br><br>
+        <button onclick="document_write()">Button document.write();</button><br><br>
+        <input type="text" id="wibu" placeholder="Masukkan Nama Anda" name="uName"><br>
+        <button onclick="document_getElementsByName()">Button document.getElementsByName();</button><br><br>
+        <button onclick="document_getElementsByTagName()">Button document.getElementsByTagName();</button><br><br>
+        <button onclick="document_getElementById()">Button document.getElementById();</button><br><br>
+    
+    </body>
+</html>

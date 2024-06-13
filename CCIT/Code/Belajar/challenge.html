@@ -1,12 +1,49 @@
 <html>
-    <head>
-        <script>
-
-        </script>
-    </head>
     <body>
-        <script>
-            
-        </script>
+        <center>
+            <form  id="Form" onsubmit="return getValue()">
+                <table>
+                    <caption>Login</caption>
+                    <tr>
+                        <td>Username:</td>
+                        <td>
+                            <input type="text" name="uName" id="uName" placeholder="Masukkan Username Anda" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="text" name="pw" id="pw" placeholder="Masukkan Password Anda" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                    <script>
+                        function getValue() {
+                            var name = document.getElementById('uName').value;
+                            var password = document.getElementById('pw').value;
+                            var adminName = "admin"; 
+                            var adminPassword = "admin";
+                
+                            if (name === adminName && password === adminPassword) {
+                                window.location.href = "oper.html"; 
+                                return false; 
+                            } else {
+                                alert("Nama atau password salah!");
+                                return false; 
+                            }
+                        }
+                    </script>
+                
+                </table>
+            </form>
+        </center>
     </body>
 </html>
