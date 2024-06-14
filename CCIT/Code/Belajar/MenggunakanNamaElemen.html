@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function (){
+                $("#show").hide();
+                $("#hide").click(function(){
+                    $("#menu ul").hide();   
+                    $("#hide").hide();
+                    $("#show").show();
+                });
+
+                $("#show").click(function(){
+                    $("#menu ul").show();
+                    $("#hide").show();
+                    $("#show").hide();
+                });
+            }); 
+            
+            $(document).ready(function (){
+                $("#toggle").click(function(){
+                    $("#menu ul").toggle()
+                });
+            });
+
+            $(document).ready(function (){
+                $("#showtf").hide();
+                $("#hidetf").click(function(){
+                    $("#textField").hide();   
+                    $("#hidetf").hide();
+                    $("#showtf").show();
+                });
+            });
+
+            $(document).ready(function (){
+                $("#showtf").click(function(){
+                    $("#textField").show();
+                    $("#hidetf").show();
+                    $("#showtf").hide();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <p>Product Menu</p>
+        <h4>Product Categories</h4>
+        <ul id="menu">
+            <li><a>Laptops</a>
+                <ul id="menus">
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                </ul>
+            </li>
+            <li><a>Phones</a>
+                <ul>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                </ul>
+            </li>
+            <li><a>Camera</a>
+                <ul>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                </ul>
+            </li>
+            <li><a>Music Players</a>
+                <ul>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                </ul>
+            </li>
+            <li><a>Laptops</a>
+                <ul>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                    <li><a href="">L-150</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <button id="hide">Hide List</button>
+        <button id="show">Show List</button>
+        <button id="toggle">Toggle</button>
+
+        <br><br>
+        <input type="text" placeholder="HALOOOO" id="textField"><br>
+        <button id="hidetf">Hide TF</button>
+        <button id="showtf">Show TF</button>
+    </body>
+</html>

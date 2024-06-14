@@ -7,7 +7,7 @@
                 $("#b").click(function () {
                     $("#para").prepend(" <B>jQuery </B> ");
                     $("#para").append(" <B>append() function.</B> ");
-                    $("#para").after(" <H3><span id='c' > This is the newly inserted heading. </span></H3> ");
+                    $("#para").after(" <H3 id='ini'>This is the newly inserted heading.</H3> ");
                     $("#newhead").hide();
                     $("#b").hide();
                     $("#a").show();
@@ -16,7 +16,7 @@
             $(document).ready(function () {
                 $("#a").click(function () {
                     $("#para b").remove();
-                    $("#c").remove();
+                    $("#ini").remove();
                     $("#newhead").show();
                     $("#b").show();
                     $("#a").hide();

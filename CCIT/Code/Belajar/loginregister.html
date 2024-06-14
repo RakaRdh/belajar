@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#regis").hide();
+
+                $("#loginbtn").click(function(){
+                    $(".login").show();
+                    $("#regis").hide();
+                });
+            });
+
+            $(document).ready(function(){
+                $("#submitLogin").click(function(){
+                    var username = $("#uNameLogin").val();
+                    var password = $("#pwLogin").val();
+
+                    if(username == 'Admin' && password == 'Admin'){
+                        window.location.href = "oper.html";
+                        return false;
+                    }else{
+                        alert("usernmae / pw salah");
+                    }
+                });
+            });
+
+            $(document).ready(function(){
+                $("#submitLogin").click(function(){
+                    var username_login = $("#uNameLogin").val();
+                    var password_login = $("#pwLogin").val();
+
+                    if(username_login == 'Admin' && password_login == 'Admin'){
+                        window.location.href = "oper.html";
+                        return false;
+                    }else{
+                        alert("usernmae / pw salah");
+                    }
+                });
+            });
+
+            $(document).ready(function(){
+            $("#regisbtn").click(function(){
+                $("#regis").show();
+                $(".login").hide();
+            });
+
+            $("#submitRegistration").click(function(){
+                var username = $("#username").val();
+                var email = $("#email").val();
+                var password = $("#password").val();
+                var confirmPassword = $("#confirmPassword").val();
+
+                if(password !== confirmPassword) {
+                    alert("Password dan konfirmasi password tidak cocok.");
+                    return;
+                }
+
+                if(username && email && password && confirmPassword) {
+                    alert("Registrasi berhasil!\nUsername: " + username + "\nEmail: " + email);
+                    $("#registrationForm input").val('');
+                    $("#registrationForm").hide();
+                    document.write(username + " " +email);
+                } else {
+                    alert("Semua field harus diisi.");
+                }
+            });
+
+            $("#resetRegistration").click(function(){
+                $("#registrationForm input").val('');
+            });
+        });
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="login">
+                <h1>Login</h1>
+                <p>Username:</p>
+                <input type="text" name="" id="uNameLogin" placeholder="Masukkan Username" required><br>
+                <p>Password:</p>
+                <input type="text" name="" id="pwLogin" placeholder="Masukkan Password" required><br><br>
+                <button type="submit" id="submitLogin">Submit</button>
+            </div>
+            <div id="regis">
+                <h2>Form Registrasi</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username"><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email"><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password"><br><br>
+        
+                <label for="confirmPassword">Konfirmasi Password:</label>
+                <input type="password" id="confirmPassword"><br><br>
+        
+                <button id="submitRegistration">Submit</button>
+                <button id="resetRegistration">Reset</button>
+            </div>
+        
+            <br><br>
+            <button id="loginbtn">Login</button>
+            <button id="regisbtn">Register</button>
+        </center>
+    </body>
+</html>
